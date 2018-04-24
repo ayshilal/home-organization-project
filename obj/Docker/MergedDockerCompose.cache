@@ -1,0 +1,11 @@
+services:
+  c2t.webapi:
+    build:
+      context: C:\Users\aysehilal.yalciner\Desktop\net-core-2--web-api\.net-core-2--web-api\C2T.WebApi
+      dockerfile: C2T.WebApi/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: c2twebapi
+    ports:
+    - 80/tcp
+version: '3.0'

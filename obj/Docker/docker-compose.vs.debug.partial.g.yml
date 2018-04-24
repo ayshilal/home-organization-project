@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  c2t.webapi:
+    image: c2twebapi:dev
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - NUGET_FALLBACK_PACKAGES=/root/.nuget/fallbackpackages;/root/.nuget/fallbackpackages2
+    volumes:
+      - C:\Users\aysehilal.yalciner\Desktop\net-core-2--web-api\.net-core-2--web-api\C2T.WebApi\C2T.WebApi:/app
+      - C:\Users\aysehilal.yalciner\vsdbg\vs2017u5:/remote_debugger:ro
+      - C:\Users\aysehilal.yalciner\.nuget\packages\:/root/.nuget/packages:ro
+      - C:\Program Files (x86)\Microsoft SDKs\NuGetPackagesFallback\:/root/.nuget/fallbackpackages:ro
+      - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:/root/.nuget/fallbackpackages2:ro
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages --additionalProbingPath /root/.nuget/fallbackpackages --additionalProbingPath /root/.nuget/fallbackpackages2  bin/Debug/netcoreapp2.0/C2T.WebApi.dll"
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/bash -c \"if PID=$$(pidof -x dotnet); then kill $$PID; fi\""

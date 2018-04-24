@@ -1,0 +1,64 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "C:\\Users\\aysehilal.yalciner\\RiderProjects\\.net-core-2-\\C2T.WebApi\\C2T.UnitTest\\C2T.UnitTest.csproj",
+    "projectName": "C2T.UnitTest",
+    "projectPath": "C:\\Users\\aysehilal.yalciner\\RiderProjects\\.net-core-2-\\C2T.WebApi\\C2T.UnitTest\\C2T.UnitTest.csproj",
+    "outputPath": "C:\\Users\\aysehilal.yalciner\\RiderProjects\\.net-core-2-\\C2T.WebApi\\C2T.UnitTest\\obj\\",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback",
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netcoreapp2.0"
+    ],
+    "frameworks": {
+      "netcoreapp2.0": {
+        "projectReferences": {
+          "C:\\Users\\aysehilal.yalciner\\RiderProjects\\.net-core-2-\\C2T.WebApi\\C2T.WebApi\\C2T.WebApi.csproj": {
+            "projectPath": "C:\\Users\\aysehilal.yalciner\\RiderProjects\\.net-core-2-\\C2T.WebApi\\C2T.WebApi\\C2T.WebApi.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp2.0": {
+      "dependencies": {
+        "Microsoft.NET.Test.Sdk": {
+          "target": "Package",
+          "version": "[15.5.0, )"
+        },
+        "Microsoft.NETCore.App": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.0.0, )",
+          "autoReferenced": true
+        },
+        "Newtonsoft.Json": {
+          "target": "Package",
+          "version": "[11.0.2, )"
+        },
+        "xunit": {
+          "target": "Package",
+          "version": "[2.3.1, )"
+        },
+        "xunit.runner.visualstudio": {
+          "target": "Package",
+          "version": "[2.3.1, )"
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}

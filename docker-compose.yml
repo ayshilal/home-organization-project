@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  c2t.webapi:
+    image: c2twebapi
+    build:
+      context: .
+      dockerfile: C2T.WebApi/Dockerfile

@@ -1,0 +1,2 @@
+C:\Users\aysehilal.yalciner\Desktop\net-core-2--web-api\.net-core-2--web-api\C2T.WebApi\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
+C:\Users\aysehilal.yalciner\Desktop\myhome\home-organization-project\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
